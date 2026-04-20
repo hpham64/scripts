@@ -428,37 +428,37 @@ case $progress in
         0)
                 echo "################################################################################"
                 enable_root_user
-                echo 1 > .debian-preconfig.progress
+                echo 1 > .debian12-preconfig.progress
                 ;&
         1)
                 echo "################################################################################"
                 enable_root_ssh
-                echo 2 > .debian-preconfig.progress
+                echo 2 > .debian12-preconfig.progress
                 ;&
         2)
                 echo "################################################################################"
                 update_system
-                echo 3 > .debian-preconfig.progress
+                echo 3 > .debian12-preconfig.progress
                 ;&
         3)
                 echo "################################################################################"
                 init_network
-                echo 4 > .debian-preconfig.progress
+                echo 4 > .debian12-preconfig.progress
                 ;&
         4)
                 echo "################################################################################"
                 remove_garbage
-                echo 5 > .debian-preconfig.progress
+                echo 5 > .debian12-preconfig.progress
                 ;&
         5)
                 echo "################################################################################"
                 add_cockpit
-                echo 6 > .debian-preconfig.progress
+                echo 6 > .debian12-preconfig.progress
                 ;&
         6)
                 echo "################################################################################"
                 setup_done
-                echo 7 > .debian-preconfig.progress
+                echo 7 > .debian12-preconfig.progress
                 ;;
         7)
                 echo "Setup successfully finished the previous time running this script."
